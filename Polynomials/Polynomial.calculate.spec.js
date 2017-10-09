@@ -1,5 +1,5 @@
 import { Polynomial } from './Polynomial';
-import { expect } from 'chai';
+import { expect, assert } from 'chai';
 import calculate, { add, subtract, multiply } from './Polynomial.calculate';
 
 function setupPoly (p) {
@@ -31,8 +31,10 @@ describe('calculate method', () => {
 			expect(add).to.be.a('function');
 		});
 
-		it('Not a test: takes in Polynomial.polyObj as arguement');
-
+		it('Not a test: takes in Polynomial.polyObj as arguement', () => {
+			assert(true === true, 'not a test');
+		});
+		
 		it('returns an plain old object', () => {
 			poly1 = setupPoly();
 			poly2 = setupPoly('10x^5');
@@ -63,7 +65,9 @@ describe('calculate method', () => {
 			expect(subtract).to.be.a('function');
 		});
 
-		it('Not a test: takes in Polynomial.polyObj as arguement');
+		it('Not a test: takes in Polynomial.polyObj as arguement', () => {
+			assert(true === true, 'not a test');
+		});
 
 		it('returns an plain old object', () => {
 			poly1 = setupPoly();
@@ -95,8 +99,9 @@ describe('calculate method', () => {
 			expect(multiply).to.be.a('function');
 		});
 
-		it('Not a test: takes in Polynomial.polyObj as arguement');
-
+		it('Not a test: takes in Polynomial.polyObj as arguement', () => {
+			assert(true === true, 'not a test');
+		});
 		it('returns an plain old object', () => {
 			poly1 = setupPoly();
 			poly2 = setupPoly('10x^5');
@@ -141,5 +146,3 @@ describe('calculate method', () => {
 	});
 
 });
-
-
